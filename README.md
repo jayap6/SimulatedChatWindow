@@ -14,31 +14,43 @@ Objects
 
 Object Oriented Analysis/Design
 
-_______________________________                     _______________________
-| List of Connections Window  |/\___________________|                     |
-|                             |\/                   |Connection           |
-|_____________________________|                     |_____________________|
+<Diagram to be added later>
 
 Class Diagram
 
 ListOfConnections
+
 -users[]
+
 __________________________________
+
 +getUsers()
+
 +addUser(username, firstname, lastname, password)
+
 +removeUser(username)
 
 
 
+
 Connection
+
 -username
+
 -firstname
+
 -lastname
+
 -password
+
 _____________________________________________
+
 +getUsername()
+
 +getFirstname()
+
 +setFirstname(String firstname)
+
 ….all get and set methods…
 
 
