@@ -60,6 +60,7 @@ Flow Chart
 4. The message gets displayed on the text area/scrolling pane. [Done]
 5. Newest messages should always appear at the bottom. Older messages should appear above newest. The chat window should scroll when needed. [Done]
 6. The user responds by sending another message which gets displayed on the text area/scrolling pane. [Done]
+
 Note:
 The data can be separated by having the JSON formatted data in a separate javascript file.
 
