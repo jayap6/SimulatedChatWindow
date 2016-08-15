@@ -1,7 +1,6 @@
 # SimulatedChatWindow
 
-Build a simulated chat window application using JavaScript and HTML5
-The filename of the HTML/Javascript file is “SimulatedChatWindow.html”
+This is a simulated chat window application using JavaScript and HTML5. The filename of the HTML/Javascript file is “SimulatedChatWindow.html”
 
 Design Details
 
