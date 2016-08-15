@@ -14,7 +14,7 @@ Objects
 
 Object Oriented Analysis/Design
 
-<Diagram to be added later>
+Diagram to be added later...
 
 Class Diagram
 
