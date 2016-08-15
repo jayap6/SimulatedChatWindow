@@ -22,7 +22,6 @@ ListOfConnections
 
 -users[]
 
-__________________________________
 
 +getUsers()
 
@@ -43,7 +42,6 @@ Connection
 
 -password
 
-_____________________________________________
 
 +getUsername()
 
