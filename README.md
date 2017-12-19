@@ -19,14 +19,17 @@ Class Diagram
 
 ListOfConnections
 
--users[]
-
+-Connection[]
 
 +getUsers()
 
 +addUser(username, firstname, lastname, password)
 
++addConnection(Connection connection)
+
 +removeUser(username)
+
++removeConnection(Connection connection)
 
 
 
