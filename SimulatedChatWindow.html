@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript">
-        $(document).ready(function() {
-        var users = [ 
-         			{
-         				Username:"jayasree.perilakkalam", 
-         				Firstname:"Jayasree", 
-         				Lastname:"Perilakkalam"
-         			}, 
-         			{
-         				Username:"jane.doe", 
-         				Firstname:"Jane", 
-         				Lastname:"Doe"
-         			}, 
-         			{
-         				Username:"john.doe", 
-         				Firstname:"John", 
-         				Lastname:"Doe"
-         			}];
-            $('#ListOfUsers').append("<ul id='uList'></ul>");
-            for (i = 0; i < users.length; i++) {
-                $("#uList").append("<li>" +
-                users[i].Username + " - " +
-                users[i].Firstname + "</li>");
-            }
-        });
-</script>
-<script type="text/javascript">
-	function sendMessage() {
-		var mesg = document.mesgToBeSent.mesgSend.value;
-		//alert(mesg);
-		document.messages.mesgs.value=document.messages.mesgs.value + "\n" + "<jayasree.perilakkalam> " + mesg + "\n";
-		document.mesgToBeSent.mesgSend.value = '';
-	}
-</script>    
-<title>Simulated Chat Window</title>
-<style>
-#ListOfUsers
-{
-	position:absolute;
-	left:30px;
-}
-#MessageWindow
-{
-	position:absolute;
-	right:400px;
-}
-</style>
-</head>
-<body>
-<div id="ListOfUsers">
-</div>
-<div id="MessageWindow">
-	<label for="mesgs" id="mesgsHeading">Messages</label>
-	<form name="messages">
-	<p>
-    <textarea readonly rows="15" cols="50" id="mesgs"
-                    style="max-height:300px; resize: none">
-    </textarea>
-    </p>
-    </form>
-    <form name="mesgToBeSent">   
-    <table>
-    	<tr>
-    		<td>
-    			<textarea rows="15" cols="50" id="mesgSend"
-                    style="max-height:100px;resize: none">
-    			</textarea>
-    		</td>
-    	</tr>
-    	<tr> 
-    		<td>
-    			<input type="button" value="Send" onclick="sendMessage();">
-    		</td>
-    	</tr>
-    </table>
-    </form>
-</div> 
-</body>
+	<head>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		var users = [ 
+					{
+						Username:"jayasree.perilakkalam", 
+						Firstname:"Jayasree", 
+						Lastname:"Perilakkalam"
+					}, 
+					{
+						Username:"jane.doe", 
+						Firstname:"Jane", 
+						Lastname:"Doe"
+					}, 
+					{
+						Username:"john.doe", 
+						Firstname:"John", 
+						Lastname:"Doe"
+					}
+				];
+		    $('#ListOfUsers').append("<ul id='uList'></ul>");
+		    for (i = 0; i < users.length; i++) {
+			$("#uList").append("<li>" +
+			users[i].Username + " - " +
+			users[i].Firstname + "</li>");
+		    }
+		});
+	</script>
+	<script type="text/javascript">
+		function sendMessage() {
+			var mesg = document.mesgToBeSent.mesgSend.value;
+			//alert(mesg);
+			document.messages.mesgs.value=document.messages.mesgs.value + "\n" + "<jayasree.perilakkalam> " + mesg + "\n";
+			document.mesgToBeSent.mesgSend.value = '';
+		}
+	</script>    
+	<title>Simulated Chat Window</title>
+	<style>
+		#ListOfUsers
+		{
+			position:absolute;
+			left:30px;
+		}
+		#MessageWindow
+		{
+			position:absolute;
+			right:400px;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="ListOfUsers">
+		</div>
+		<div id="MessageWindow">
+			<label for="mesgs" id="mesgsHeading">Messages</label>
+			<form name="messages">
+			<p>
+				<textarea readonly rows="15" cols="50" id="mesgs"
+					    style="max-height:300px; resize: none">
+				</textarea>
+			</p>
+			</form>
+			<form name="mesgToBeSent">   
+			<table>
+				<tr>
+					<td>
+						<textarea rows="15" cols="50" id="mesgSend"
+								style="max-height:100px;resize: none">
+						</textarea>
+					</td>
+				</tr>
+				<tr> 
+					<td>
+						<input type="button" value="Send" onclick="sendMessage();">
+					</td>
+				</tr>
+			</table>
+			</form>
+		</div> 
+	</body>
 </html>
