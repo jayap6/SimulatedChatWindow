@@ -17,7 +17,7 @@ Diagram to be added later...
 
 Class Diagram
 
-ListOfConnections
+ListOfConnections 
 
 -Connection[]
 
@@ -25,16 +25,16 @@ ListOfConnections
 
 +addUser(username, firstname, lastname, password)
 
-+addConnection(Connection connection)
++addConnection(connection)
 
 +removeUser(username)
 
-+removeConnection(Connection connection)
++removeConnection(connection)
 
 
 
 
-Connection
+Connection 
 
 -username
 
@@ -52,6 +52,16 @@ Connection
 +setFirstname(String firstname)
 
 ….all get and set methods…
+
+ChatWindow (Interface)
+
++login(username, password)
+
++getConnections() 
+
++chat(message)
+
+Note: Encryption for the password is required. Chat is a mechanism for sending and receiving messages. 
 
 
 Flow Chart
